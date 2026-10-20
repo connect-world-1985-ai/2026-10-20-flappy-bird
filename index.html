@@ -13,6 +13,10 @@
   <div id="wrap">
     <canvas id="game" aria-label="Flappy Bird game canvas"></canvas>
     <button id="mute" type="button" aria-label="Mute sound" title="Mute (M)">🔊</button>
+    <div id="difficulty" role="group" aria-label="Difficulty">
+      <button type="button" data-difficulty="easy" aria-pressed="true" title="Easier gaps and slower pipes">Easy</button>
+      <button type="button" data-difficulty="normal" aria-pressed="false" title="Original challenge">Normal</button>
+    </div>
   </div>
   <noscript>This game needs JavaScript.</noscript>
   <script src="game.js"></script>

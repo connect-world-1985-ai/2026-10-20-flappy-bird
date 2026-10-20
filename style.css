@@ -28,3 +28,29 @@ html, body {
 }
 #mute:hover { background: rgba(255, 255, 255, 0.95); }
 #mute:focus-visible { outline: 3px solid #f8d630; }
+#difficulty {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.35);
+}
+#difficulty button {
+  min-width: 72px;
+  padding: 8px 14px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.65);
+  color: #1d2b36;
+  font: 600 14px system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  cursor: pointer;
+}
+#difficulty button:hover { background: rgba(255, 255, 255, 0.9); }
+#difficulty button.active {
+  background: #f8d630;
+  border-color: #543847;
+  color: #543847;
+}
+#difficulty button:focus-visible { outline: 3px solid #f8d630; }
